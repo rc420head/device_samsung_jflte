@@ -41,8 +41,12 @@ TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro-4.7-12.10/bin/arm-linux-gnueabihf-
 
 
 # WiFi module
-WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/dhd.ko"
+BOARD_HAVE_SAMSUNG_WIFI := true
+WIFI_BAND := 802_11_ABG
+WIFI_DRIVER_MODULE_AP_ARG := "firmware_path=/system/etc/wifi/bcmdhd_apsta.bin nvram_path=/system/etc/wifi/nvram_net.txt"
+WIFI_DRIVER_MODULE_ARG := "firmware_path=/system/etc/wifi/bcmdhd_sta.bin nvram_path=/system/etc/wifi/nvram_net.txt"
 WIFI_DRIVER_MODULE_NAME := "dhd"
+WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/dhd.ko"
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
