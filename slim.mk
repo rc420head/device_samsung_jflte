@@ -10,3 +10,4 @@ $(call inherit-product, vendor/slim/config/common_full_phone.mk)
 $(call inherit-product, vendor/slim/config/common_multicarrier.mk)
 
 PRODUCT_NAME := slim_jflte
+PRODUCT_DEVICE := jflte
