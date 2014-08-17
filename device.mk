@@ -108,6 +108,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     gps.msm8960
 
+# GalaxyS3Settings
+PRODUCT_PACKAGES += \
+    GalaxyS3Settings \
+    SamsungServiceMode
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/gps.conf:/system/etc/gps.conf \
     $(LOCAL_PATH)/gps/etc/sap.conf:/system/etc/sap.conf
